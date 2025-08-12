@@ -1,12 +1,90 @@
-# React + Vite
+# Weather Chat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*A smart weather agent with memory that delivers real-time weather updates and remembers previous conversations.*
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🌤️ Weather Chat – Interactive Weather Agent with Memory
 
-## Expanding the ESLint configuration
+This project is a **React + Vite** web app that connects to a custom **Weather Agent** (built in Mastra) to provide real-time weather updates.  
+It remembers previous interactions, so you can have an ongoing conversation about the weather.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+- **Live Weather Data** – Fetches up-to-date weather info using Mastra deployment.
+- **Chat Interface** – Simple, intuitive chat layout for user queries.
+- **Agent Memory** – Remembers past conversation context.
+- **No API Key Required** – Works via configured Mastra agent endpoint.
+- **Responsive UI** – Works on desktop & mobile.
+
+---
+
+## 📸 Screenshots
+
+### Main Chat UI
+![Screenshot 1](./screenshots/screenshot1.png)
+
+### Weather Agent in Action
+![Screenshot 2](./screenshots/screenshot2.png)
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React + Vite
+- **Styling:** CSS (custom + index.css)
+- **Backend Agent:** Mastra Weather Agent
+- **Build Tool:** Vite
+
+---
+
+## 📂 Project Structure
+my-project/
+│
+├── public/
+├── screenshots/       # Project screenshots
+├── src/
+│   ├── assets/
+│   ├── components/    # ChatWindow, Sidebar
+│   ├── utils/         # API functions
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+
+---
+
+## ⚙️ Setup & Run Locally
+```bash
+# Clone the repo
+git clone https://github.com/vinitvajani/weather-chat.git
+
+# Go to project folder
+cd weather-chat
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+📬 How It Works
+	1.	User enters a weather query in the chat box.
+	2.	Mastra Weather Agent processes the request and fetches weather info.
+	3.	Agent responds in real time via streaming API.
+	4.	Chat interface updates instantly.
+
+⸻
+
+👨‍💻 Author
+
+Vinit Vajani – GitHub
+
+⸻
+
+⭐ Like this project?
+
+If you find this project useful, consider giving it a star ⭐ on GitHub to support my work!
+
+
