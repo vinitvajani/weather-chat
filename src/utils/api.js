@@ -1,5 +1,5 @@
 const API_URL = "https://sparse-mango-iron.mastra.cloud/api/agents/weatherAgent/stream";
-const THREAD_ID = "60002220073"; // Replace with your actual roll number
+const THREAD_ID = "6000223"; // Replace with your actual roll number
 
 export async function* sendMessageStream(userMessage) {
   console.log("Sending to API:", userMessage);
